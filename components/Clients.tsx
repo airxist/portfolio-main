@@ -1,5 +1,6 @@
 import { companies, testimonials } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteMovingCards";
+import Image from "next/image";
 
 const Clients = () => {
   return (
@@ -17,8 +18,8 @@ const Clients = () => {
         <div className="flex items-center gap-4 flex-wrap justify-center md:gap-16 max-lg:mt-10">
           {companies.map((company) => (
             <div key={company.id} className="flex items-center max-w-32 md:max-w-60 gap-2">
-              <img src={company.img} alt={company.name} className="md:w-10 w-5" />
-              <img src={company.nameImg} alt={company.nameImg} className="md:w-24 w-20" />
+              <Image  src={company.img} alt={company.name} className="md:w-10 w-5" />
+              <Image src={company.nameImg} alt={company.nameImg} className="md:w-24 w-20" />
             </div>
           ))}
         </div>

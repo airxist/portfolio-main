@@ -1,6 +1,7 @@
 import { workExperience } from "@/data";
 import { Button } from "./ui/MovingBorders";
 import { div } from "three/examples/jsm/nodes/Nodes.js";
+import Image from "next/image";
 
 const Experiences = () => {
   return (
@@ -17,7 +18,7 @@ const Experiences = () => {
             duration={(Math.floor(Math.random() * 1000) + 5000)}
             containerClassName={card.className}
           >
-            <img src={card.thumbnail} alt={card.thumbnail} className="w-16 md:w-20 lg:w-32 block" />
+            <Image src={card.thumbnail} alt={card.thumbnail} className="w-16 md:w-20 lg:w-32 block" />
             <div className="mt-2">
               <h1 className="text-xl md:text-2xl font-bold text-start">{card.title}</h1>
               <p className="mt-3 text-start text-white-100 font-semibold">{card.desc}</p>

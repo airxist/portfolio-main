@@ -4,6 +4,7 @@ import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import Process from "@/components/Process";
 import RecentProjects from "@/components/RecentProjects";
+import Footer from "@/components/Footer";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 
@@ -12,13 +13,13 @@ export default function Home() {
     <main className="relative flex bg-black-100 justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
-        {/* <Hero />
+        <Hero />
         <Grid />
         <RecentProjects />
-        */}
-        {/* <Clients /> */}
-        {/* <Experiences /> */}
+        <Clients />
+        <Experiences />
         <Process />
+        <Footer />
       </div>
     </main>
   );

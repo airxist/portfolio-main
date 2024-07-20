@@ -45,7 +45,7 @@ export function Process() {
               [236, 72, 153],
               [232, 121, 249],
             ]}
-            dotSize={8}
+            // dotSize={90}
           />
         </Card>
         <Card
